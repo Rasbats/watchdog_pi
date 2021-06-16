@@ -79,7 +79,7 @@ set(PROD "prod")   #Standard Repos
 set(BETA "beta")   #Standard Repos
 set(ALPHA "alpha") #Standard Repos
 
-set(CLOUDSMITH_USER "opencpn")
+set(CLOUDSMITH_USER "mike-rossiter")
 #set(CLOUDSMITH_USER "rick-gleason")
 
 # Set if Cloudsmith Base Repository name does not match your Git Repository name.
