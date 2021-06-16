@@ -47,7 +47,7 @@ ConfigurationDialog::ConfigurationDialog( watchdog_pi &_watchdog_pi, wxWindow* p
     m_rbVisible->SetValue(enabled == 3);
     m_rbNever->SetValue(enabled == 0);
 
-    wxFont font(14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, "Arial");
+    wxFont font(14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
     m_font->SetFont(font);
     m_watchdog_pi.m_WatchdogDialog->m_lStatus->SetFont(font);
 }
