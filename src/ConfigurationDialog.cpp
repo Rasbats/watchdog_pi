@@ -46,7 +46,7 @@ ConfigurationDialog::ConfigurationDialog( watchdog_pi &_watchdog_pi, wxWindow* p
     m_rbVisible->SetValue(enabled == 3);
     m_rbNever->SetValue(enabled == 0);
 
-    wxFont font(pConf->Read ( _T ( "Font" ), wxFont(14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL).GetNativeFontInfoDesc()));
+    wxFont font(14, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, "Arial");
     m_font->SetFont(font);
     m_watchdog_pi.m_WatchdogDialog->m_lStatus->SetFont(font);
 }
@@ -73,7 +73,7 @@ void ConfigurationDialog::OnFont( wxFontPickerEvent& event )
 {
     wxFont font = event.GetFont();
     m_watchdog_pi.m_WatchdogDialog->m_lStatus->SetFont(font);
-    
+
     wxFileConfig *pConf = GetOCPNConfigObject();
     pConf->SetPath ( _T( "/Settings/Watchdog" ) );
     pConf->Write ( _T ( "Font" ), font.GetNativeFontInfoDesc() );
