@@ -43,7 +43,7 @@
 #include "GL/gl_private.h"
 #endif
 #endif
-
+#include <wx/font.h>
 
 class watchdog_pi;
 

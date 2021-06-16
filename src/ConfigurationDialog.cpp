@@ -30,6 +30,7 @@
 #include "ConfigurationDialog.h"
 #include "NewAlarmDialog.h"
 #include "EditAlarmDialog.h"
+#include <wx/font.h>
 
 enum AlarmConfig { ALARM_TYPE, ALARM_OPTIONS, ALARM_ACTION };
 
